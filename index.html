@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxy Adventures</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="logo">Galaxy Adventures</div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#como-jogar">Como Jogar</a>
+      <a href="https://docs.google.com/document/d/1cGk6Ku3IGBVIt1I8RCEFDxiQ_mbgRTWjXESWtpoaXws/edit?tab=t.0">Regras</a>
+      <a href="#loja">Loja</a>
+      <a href="https://discord.gg/galaxyadventures" class="discord">Discord</a>
+      <a href="https://www.youtube.com/watch?v=8erO-zBOyo8" class="ATT">Atualizações</a>
+    </nav>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section id="inicio" class="hero">
+
+    <div class="content"> 
+      <h1 class="msg">Galaxy Adventures</h1>
+
+      <div class="buttons">
+        <a href="arquivos/GalaxyLauncher_PC.zip" download class="DPC">Launcher PC</a>
+        <a href="#" class="btn trailer">Ver trailer</a>
+        <a href="arquivos/GalaxyLauncher_Mobile.zip" download class="DMoba">Launcher Mobile</a>
+      </div>
+    </div>
+
+    <img src="arquivos/Picsart_25-12-06_08-08-50-868-removebg-preview.png" 
+         alt="Personagem" 
+         class="hero-image">
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2025 Galaxy Adventures - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- ================= POPUP TRAILER ================= -->
+  <div id="trailerModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <video id="trailerVideo" controls>
+        <source src="arquivos\VID-20251206-WA0015.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+
+    </div>
+  </div>
+
+  <!-- ================= SCRIPT TRAILER ================= -->
+  <script>
+    const modal = document.getElementById("trailerModal");
+    const openTrailer = document.querySelector(".btn.trailer");
+    const closeModal = document.querySelector(".close");
+    const video = document.getElementById("trailerVideo");
+
+    // Abrir modal
+    openTrailer.onclick = (e) => {
+      e.preventDefault();
+      modal.style.display = "flex";
+      video.play();
+    };
+
+    // Fechar modal
+    closeModal.onclick = () => {
+      modal.style.display = "none";
+      video.pause();
+      video.currentTime = 0;
+    };
+
+    // Fechar clicando fora
+    window.onclick = (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+        video.pause();
+        video.currentTime = 0;
+      }
+    };
+  </script>
+
+</body>
+</html>
