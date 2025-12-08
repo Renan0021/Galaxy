@@ -1,0 +1,470 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #0b019b, #0b019b);
+  color: #ffffff;
+}
+
+/* ================= HEADER ================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #0b019b;
+}
+
+header .logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff497c;
+}
+
+/* ================= HERO ================= */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  min-height: 80vh;
+  background: url('https://media.discordapp.net/attachments/1416602055652409445/1447305844386566315/IMG-20251207-WA0028.jpg?ex=6937241a&is=6935d29a&hm=09cb0dcb8e104931a2659535fa6119279b0289b5a700d20bd21562887ef75b76&=&format=webp') center/cover no-repeat;
+}
+
+.hero .content {
+  max-width: 50%;
+  margin-top: -60px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Texto principal */
+.msg {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+/* ================= BOTÕES HERO ================= */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: -10px;
+}
+
+.DMoba,
+.DPC,
+.btn.trailer {
+  padding: 12px 28px;
+  border-radius: 35px;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+}
+
+.DMoba,
+.DPC {
+  background: #2c38d8;
+  color: white;
+}
+
+.btn.trailer {
+  background: #333;
+  color: white;
+}
+
+/* ================= IMAGEM ================= */
+.hero-image {
+  width: 380px;
+  border-radius: 10px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.4);
+}
+
+/* ================= POPUP TRAILER ===================== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #111;
+  padding: 15px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+}
+
+.modal video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ff497c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #0b019b, #0b019b);
+  color: #ffffff;
+}
+
+/* ================= HEADER ================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #0b019b;
+}
+
+header .logo {
+  font-size: 1.1rem;
+  font-weight:1000;
+  color: #fff;
+  margin-left: -45px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff497c;
+}
+
+/* ================= HERO ================= */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  min-height: 80vh;
+  background: url('https://media.discordapp.net/attachments/1416602055652409445/1447305844386566315/IMG-20251207-WA0028.jpg?ex=6937241a&is=6935d29a&hm=09cb0dcb8e104931a2659535fa6119279b0289b5a700d20bd21562887ef75b76&=&format=webp') center/cover no-repeat;
+}
+
+.hero .content {
+  max-width: 50%;
+  margin-top: -60px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Texto principal */
+.msg {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+/* ================= BOTÕES HERO ================= */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: -10px;
+}
+
+.DMoba,
+.DPC,
+.btn.trailer {
+  padding: 12px 28px;
+  border-radius: 35px;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+}
+
+.DMoba,
+.DPC {
+  background: #2c38d8;
+  color: white;
+}
+
+.btn.trailer {
+  background: #333;
+  color: white;
+}
+
+/* ================= IMAGEM ================= */
+.hero-image {
+  width: 380px;
+  border-radius: 10px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.4);
+}
+
+/* ================= POPUP TRAILER ===================== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #111;
+  padding: 15px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+}
+
+.modal video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ff497c;
+}
+
+html, body {
+  overflow-x: hidden !important;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* NAV MOBILE HORIZONTAL SCROLL */
+@media (max-width: 700px) {
+
+  nav {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    gap: 10px;
+
+    /* remove barra feia */
+    scrollbar-width: none;
+  }
+
+  /* remove barra no Chrome / Safari */
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+    margin: 0;
+    display: inline-block;
+  }
+}
+
+/* ================= MODO VERTICAL (PORTRAIT) ================= */
+@media (orientation: portrait) {
+
+  /* Coloca o hero em coluna para organizar melhor */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 8%;
+    min-height: auto;
+  }
+
+  /* Texto principal */
+  .msg {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    margin-top: 80px;
+  }
+
+  /* BOTÕES UM EMBAIXO DO OUTRO */
+  .buttons {
+    flex-direction: column !important;
+    gap: 15px;
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+  }
+
+  /* Tamanho confortável dos botões */
+  .buttons a {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  /* IMAGEM ABAIXO DOS BOTÕES */
+  .hero-image {
+    margin-top: 28px;
+    width: 240px;
+    max-width: 80%;
+    order: 10; /* força a imagem ficar por último */
+  }
+}
+
+/* Ajuste específico para telas parecidas com Pixel 7 Pro */
+@media (min-aspect-ratio: 3/5) and (max-aspect-ratio: 4/5) {
+
+  header {
+    padding: 10px 25px !important; /* diminui a barra azul */
+  }
+
+  nav a {
+    font-size: 1.8rem !important;
+    margin: 0 5px !important;
+  }
+
+  .logo {
+    font-size: rem !important;
+  }
+
+  /* Ajusta o hero para não ficar esmagado */
+  .hero {
+    padding: 40px 10% !important;
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  /* Ajusta posição do texto */
+  .msg {
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* Botões mais organizados */
+  .buttons {
+    flex-direction: column !important;
+    gap: 15px !important;
+  }
+
+  .buttons a {
+    width: 70%;
+    max-width: 300px;
+  }
+
+  /* Imagem mais proporcional */
+  .hero-image {
+    width: 250px !important;
+    margin-top: 50px !important;
+  }
+}
+
+/* ================= SERVER STATUS (PC) ================= */
+.server-status { 
+  position: fixed; /* fixa na tela */
+  top: 3px; /* distância do topo */
+  right: 600px; /* distância da borda */
+  background: #0b019b; /* cor de fundo */
+  padding: 12px 18px; /* espaçamento interno */
+  border-radius: 10px; /* cantos arredondados */
+  display: flex;  /* usa flexbox */
+  align-items: center; /* alinha verticalmente */
+  gap: 10px; /* espaço entre ícone e texto */
+  z-index: 9999; /* garante que fique acima de outros elementos */
+  backdrop-filter: blur(6px);  /* efeito de desfoque */
+  border: 1px solid #09017c; /* borda sutil */
+}
+
+.server-status .icon {
+  font-size: 20px;
+}
+
+.server-status .label {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.server-status .values {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* ================= MODO MOBILE (LADO ESQUERDO) ================= */
+@media (max-width: 700px) {
+  .server-status {
+    top: 50%;
+    right: auto;
+    left: 10px;
+    transform: translateY(-50%);
+    flex-direction: column;
+    padding: 10px 14px;
+  }
+}
